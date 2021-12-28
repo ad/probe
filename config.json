@@ -17,7 +17,7 @@
     "SYS_TIME"
   ],
   "options": {
-    "set_system_clock": true,
+    "authAddr": "127.0.0.1",
     "mode": "pool",
     "ntp_pool": "pool.ntp.org",
     "ntp_server": [
@@ -27,7 +27,7 @@
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "set_system_clock": "bool",
+    "authAddr": "str",
     "ntp_pool": "str?",
     "ntp_server": [
       "str?"
