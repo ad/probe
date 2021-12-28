@@ -14,7 +14,7 @@
   "hassio_api": false,
   "init": false,
   "privileged": [
-    "SYS_TIME"
+    "NET_ADMIN"
   ],
   "options": {
     "authAddr": "127.0.0.1",
