@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "a53dc43c",
+  "version": "a4810901",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -17,22 +17,17 @@
     "NET_ADMIN"
   ],
   "options": {
-    "AUTH_ADDR": "127.0.0.1",
-    "mode": "pool",
-    "ntp_pool": "pool.ntp.org",
-    "ntp_server": [
-      "54.39.13.155",
-      "briareus.schulte.org"
-    ]
+    "AUTH_ADDR": "127.0.0.1:6000",
+    "MESSAGES_ADDR": "127.0.0.1:8000",
+    "UUID": "",
+    "SECRET": ""
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "AUTH_ADDR": "str",
-    "ntp_pool": "str?",
-    "ntp_server": [
-      "str?"
-    ],
-    "mode": "list(pool|server)"
+    "MESSAGES_ADDR": "str",
+    "UUID": "str",
+    "SECRET": "str"
   },
   "image": "docker.io/danielapatin/probe"
 }
