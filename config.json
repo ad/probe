@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "latest",
+  "version": "a53dc43c",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -17,7 +17,7 @@
     "NET_ADMIN"
   ],
   "options": {
-    "authAddr": "127.0.0.1",
+    "AUTH_ADDR": "127.0.0.1",
     "mode": "pool",
     "ntp_pool": "pool.ntp.org",
     "ntp_server": [
@@ -27,7 +27,7 @@
   },
   "schema": {
     "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
-    "authAddr": "str",
+    "AUTH_ADDR": "str",
     "ntp_pool": "str?",
     "ntp_server": [
       "str?"
