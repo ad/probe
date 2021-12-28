@@ -34,5 +34,5 @@
     ],
     "mode": "list(pool|server)"
   },
-  "image": "docker.io/danielapatin/probe:latest"
+  "image": "docker.io/danielapatin/probe"
 }
