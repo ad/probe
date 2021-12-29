@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "a4810901",
+  "version": "2be17e66",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -20,14 +20,17 @@
     "AUTH_ADDR": "127.0.0.1:6000",
     "MESSAGES_ADDR": "127.0.0.1:8000",
     "UUID": "",
-    "SECRET": ""
+    "SECRET": "",
+    "MAX_WORKERS": 5,
+    "DEBUG": false
   },
   "schema": {
-    "log_level": "list(trace|debug|info|notice|warning|error|fatal)?",
     "AUTH_ADDR": "str",
     "MESSAGES_ADDR": "str",
     "UUID": "str",
-    "SECRET": "str"
+    "SECRET": "str",
+    "MAX_WORKERS": "int(1, 10)",
+    "DEBUG": "bool"
   },
   "image": "docker.io/danielapatin/probe"
 }
