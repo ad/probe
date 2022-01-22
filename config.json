@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "006747f0",
+  "version": "ac3c0bf6",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -19,6 +19,7 @@
   "options": {
     "AUTH_ADDR": "127.0.0.1:6000",
     "MESSAGES_ADDR": "127.0.0.1:8000",
+    "RESULTS_ADDR": "",
     "UUID": "",
     "SECRET": "",
     "MAX_WORKERS": 5,
@@ -27,6 +28,7 @@
   "schema": {
     "AUTH_ADDR": "str",
     "MESSAGES_ADDR": "str",
+    "RESULTS_ADDR": "str",
     "UUID": "str",
     "SECRET": "str",
     "MAX_WORKERS": "int(1,10)",
