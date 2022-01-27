@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "bf1d547b",
+  "version": "1bb513c4",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -14,7 +14,8 @@
   "hassio_api": false,
   "init": false,
   "privileged": [
-    "NET_ADMIN"
+    "NET_ADMIN",
+    "CAP_NET_RAW"
   ],
   "options": {
     "AUTH_ADDR": "127.0.0.1:6000",
