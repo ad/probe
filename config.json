@@ -14,8 +14,7 @@
   "hassio_api": false,
   "init": false,
   "privileged": [
-    "NET_ADMIN",
-    "CAP_NET_RAW"
+    "NET_ADMIN"
   ],
   "options": {
     "AUTH_ADDR": "127.0.0.1:6000",
