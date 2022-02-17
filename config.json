@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "${SHORTREF}",
+  "version": "${GITHUB_SHA::8}",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
