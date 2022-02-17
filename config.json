@@ -1,0 +1,38 @@
+{
+  "name": "haprobe",
+  "version": "62e5c70e",
+  "slug": "haprobe",
+  "description": "haprobe",
+  "url": "https://github.com/ad/probe",
+  "startup": "system",
+  "arch": [
+    "aarch64",
+    "amd64",
+    "armhf",
+    "armv7"
+  ],
+  "hassio_api": false,
+  "init": false,
+  "privileged": [
+    "NET_ADMIN"
+  ],
+  "options": {
+    "AUTH_ADDR": "127.0.0.1:6000",
+    "MESSAGES_ADDR": "127.0.0.1:8000",
+    "RESULTS_ADDR": "",
+    "UUID": "",
+    "SECRET": "",
+    "MAX_WORKERS": 5,
+    "DEBUG": false
+  },
+  "schema": {
+    "AUTH_ADDR": "str",
+    "MESSAGES_ADDR": "str",
+    "RESULTS_ADDR": "str",
+    "UUID": "str",
+    "SECRET": "str",
+    "MAX_WORKERS": "int(1,10)",
+    "DEBUG": "bool"
+  },
+  "image": "docker.io/danielapatin/probe"
+}
