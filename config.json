@@ -34,5 +34,5 @@
     "MAX_WORKERS": "int(1,10)",
     "DEBUG": "bool"
   },
-  "image": "docker.io/danielapatin/probe"
+  "image": "ghcr.io/ipmn/probe"
 }
