@@ -17,18 +17,14 @@
     "NET_ADMIN"
   ],
   "options": {
-    "AUTH_ADDR": "127.0.0.1:6000",
-    "MESSAGES_ADDR": "127.0.0.1:8000",
-    "RESULTS_ADDR": "",
+    "SERVER_ADDR": "127.0.0.1:50005",
     "UUID": "",
     "SECRET": "",
     "MAX_WORKERS": 5,
     "DEBUG": false
   },
   "schema": {
-    "AUTH_ADDR": "str",
-    "MESSAGES_ADDR": "str",
-    "RESULTS_ADDR": "str",
+    "SERVER_ADDR": "str",
     "UUID": "str",
     "SECRET": "str",
     "MAX_WORKERS": "int(1,10)",
