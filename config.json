@@ -20,7 +20,8 @@
     "SERVER_ADDR": "127.0.0.1:50005",
     "UUID": "",
     "SECRET": "",
-    "MAX_WORKERS": 5,
+    "MAX_WORKERS": 10,
+    "METRICS": false,
     "DEBUG": false
   },
   "schema": {
@@ -28,6 +29,7 @@
     "UUID": "str",
     "SECRET": "str",
     "MAX_WORKERS": "int(1,10)",
+    "METRICS": "bool",
     "DEBUG": "bool"
   },
   "image": "docker.io/danielapatin/probe"
