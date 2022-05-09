@@ -14,7 +14,7 @@
   "hassio_api": false,
   "ingress": true,
   "ingress_port": 18002,
-  "webui": "http://[HOST]:[PORT:18002]/",
+  "webui": "http://[HOST]:[PORT:18002]/debug/metrics",
   "ports": {
     "18002/tcp": 18002
   },
