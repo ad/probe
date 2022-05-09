@@ -13,13 +13,13 @@
   ],
   "hassio_api": false,
   "ingress": true,
-  "ingress_port": 8000,
-  "webui": "http://[HOST]:[PORT:8000]/",
+  "ingress_port": 18002,
+  "webui": "http://[HOST]:[PORT:18002]/",
   "ports": {
-    "8000/tcp": 8000
+    "18002/tcp": 18002
   },
   "ports_description": {
-    "8000/tcp": "Web interface for metrics"
+    "18002/tcp": "Web interface for metrics"
   },
   "init": false,
   "privileged": [
@@ -30,7 +30,7 @@
     "UUID": "",
     "SECRET": "",
     "MAX_WORKERS": 10,
-    "METRICS": false,
+    "METRICS_LISTEN": ":18002",
     "DEBUG": false
   },
   "schema": {
@@ -38,7 +38,7 @@
     "UUID": "str",
     "SECRET": "str",
     "MAX_WORKERS": "int(1,10)",
-    "METRICS": "bool",
+    "METRICS_LISTEN": "str",
     "DEBUG": "bool"
   },
   "image": "docker.io/danielapatin/probe"
