@@ -1,6 +1,6 @@
 {
   "name": "haprobe",
-  "version": "75ee03bf",
+  "version": "75ee03bf-metrics",
   "slug": "haprobe",
   "description": "haprobe",
   "url": "https://github.com/ad/probe",
@@ -12,6 +12,15 @@
     "armv7"
   ],
   "hassio_api": false,
+  "ingress": true,
+  "ingress_port": 8000,
+  "webui": "http://[HOST]:[PORT:8000]/",
+  "ports": {
+    "8000/tcp": 8000
+  },
+  "ports_description": {
+    "8000/tcp": "Web interface for metrics"
+  },
   "init": false,
   "privileged": [
     "NET_ADMIN"
