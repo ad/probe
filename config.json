@@ -40,7 +40,7 @@
     "SECRET": "str",
     "MAX_WORKERS": "int(1,10)",
     "METRICS_LISTEN": "str",
-    "PLUGINS_DISABLE": "match(^((head|ping|ping6|whois|geo|dns|tondns|dig|reversedns|hoststat|speedtest|traceroute|traceroute6|tcp|udp|update|cert),)*(head|ping|ping6|whois|geo|dns|dig|reversedns|hoststat|speedtest|traceroute|traceroute6|tcp|udp|update|cert)*$)",
+    "PLUGINS_DISABLE": "match(^((head|ping|ping6|whois|geo|dns|tondns|dig|reversedns|hoststat|speedtest|traceroute|traceroute6|tcp|udp|update|cert),)*(head|ping|ping6|whois|geo|dns|tondns|dig|reversedns|hoststat|speedtest|traceroute|traceroute6|tcp|udp|update|cert)*$)",
     "DEBUG": "bool"
   },
   "image": "docker.io/danielapatin/probe"
